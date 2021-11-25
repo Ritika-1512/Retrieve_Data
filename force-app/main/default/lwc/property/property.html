@@ -1,0 +1,27 @@
+<template>
+    <lightning-button variant="brand"
+label="New Property"
+title="Property Details"
+onclick={openModal}
+class="slds-m-left_x-small">
+</lightning-button>   
+<template if:true={isModalOpen}>
+
+<lightning-card title="Create Property Record" >
+    <div class="slds-p-around_x-small">
+        <lightning-input label="Name" type="text" value={record.Name} onchange={handleNameChange} required="true"></lightning-input>
+                <lightning-input label="Date" type="date" value={record.Date} onchange={handleDateChange} required="true"></lightning-input>
+                <lightning-input type="currency" label="Amount" value={record.Amount} onchange={handleAmountChange} required="true"></lightning-input>
+               <!-- <lightning-combobox 
+                        name="category" label="Category" value={value}
+                        options={industryPicklist.data.values} onchange={handleChange}>
+                </lightning-combobox>-->
+<lightning-input type="Notes" label="Notes" value={record.Notes} onchange={handleNotesChange} required="true"></lightning-input><br/>
+</div>
+<footer class="slds-modal__footer">
+    <button class="slds-button slds-button_neutral" onclick={closeModal} title="Cancel">Cancel</button>
+    <button class="slds-button slds-button_brand" onclick={submitDetails} title="Save">Save</button>
+</footer>
+</lightning-card>
+</template>
+</template>
