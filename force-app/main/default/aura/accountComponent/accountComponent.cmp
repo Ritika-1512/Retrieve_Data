@@ -1,0 +1,8 @@
+<aura:component controller="accountToContact">
+    <!--parent component-->
+    <c:contactComponent aura:id="childcmp" />
+    <!--<aura:attribute name="accSearch" type="string"/>
+    <lightning:input name="accSearch1" value="accSearch"/>-->
+    <lightning:button label="click" variant="brand" onclick="{!c.parentAction}" />
+	
+</aura:component>

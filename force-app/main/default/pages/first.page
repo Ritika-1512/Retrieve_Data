@@ -1,0 +1,4 @@
+<apex:page controller="first">
+    <apex:form >
+    </apex:form>
+</apex:page>

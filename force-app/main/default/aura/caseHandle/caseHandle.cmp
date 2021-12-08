@@ -1,0 +1,13 @@
+<aura:component controller="newCase" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+        <aura:attribute name="casesuggestion" type="case[]"/>
+        
+    <aura:iteration items="{!v.caseList}" var="c">
+            <p>
+            {!c.CaseNumber}<br/>
+            {!c.Subject}
+            </p>
+    </aura:iteration>
+    
+
+</aura:component>

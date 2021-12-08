@@ -1,0 +1,19 @@
+<aura:component >
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:attribute name="city" type="string" />
+    <aura:attribute name="state" type="string" />
+    <aura:attribute name="pincode" type="integer"/>
+    City :{!v.city}<br/><br/>
+    State :{!v.state}<br/><br/>
+    Pincode :{!v.pincode}
+    <lightning:buttongroup>
+        <lightning:button label="Refresh" title="Refresh" />
+        <lightning:button label="Cancel" title="cancel" />
+        <lightning:button label="Save" title="Save" />
+        <lightning:buttonmenu>
+            <lightning:menuitem label="Account" value="" />
+            <lightning:menuitem label="Contact" />
+            <lightning:menuitem label="Opportunity" />
+        </lightning:buttonmenu>
+    </lightning:buttongroup>
+</aura:component>

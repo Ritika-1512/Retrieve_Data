@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:attribute name="eventhandler" type="string" />
+    <c:first_Event/>
+    <aura:handler name="auraEvt" event="c:firstEvent"  action="{!c.handleEventApplication}" />
+    <p>
+      {!v.eventhandler}
+    </p>
+	
+</aura:component>

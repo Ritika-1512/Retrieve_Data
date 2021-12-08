@@ -1,0 +1,7 @@
+<apex:page controller="calculationclass" action="{!add}" >
+    <apex:form id="fm">
+        <apex:commandButton value="submit" action="{!mul}" reRender="fm" />
+        <apex:commandButton value="sub" action="{!sub}" reRender="fm" />
+        {!result}
+    </apex:form>
+</apex:page>

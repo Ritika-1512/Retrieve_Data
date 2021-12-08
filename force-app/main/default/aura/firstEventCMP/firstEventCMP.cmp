@@ -1,0 +1,6 @@
+<aura:component >
+    <c:secondEventCMP />
+    Student : {!v.student}
+    Subject : {!v.subject}
+    City	: {!v.city}
+</aura:component>

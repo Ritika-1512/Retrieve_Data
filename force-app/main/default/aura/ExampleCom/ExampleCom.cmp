@@ -1,0 +1,5 @@
+<aura:component >
+    <aura:attribute name="Student" type="string" default="Ritika"/>
+   <aura:handler name ="init" value="{!this}" action="{!c.doInit}" />
+    {!v.Student}
+</aura:component>

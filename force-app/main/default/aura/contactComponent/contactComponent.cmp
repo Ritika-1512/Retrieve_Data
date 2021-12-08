@@ -1,0 +1,13 @@
+<aura:component controller="accountToContact" >
+    <!--child component-->
+    <!--<aura:registerEvent name="contactEvent" type="c:contactEvent" />-->
+     <lightning:input name="seachAcc" label="Type Something" />
+    <aura:method name="childMethod" action="{!c.myAction}" access="public" >
+    <aura:attribute name="greeting" type="string" default="Hello" />
+    <aura:attribute name="name" type="string" default="Ritika"/>
+    </aura:method>
+    <!--First Name :{!v.fname}<br/>
+    Last Name :{!v.lName}<br/>
+    <lightning:button label="save" onclick="myAction" description="for callingchild component"/>-->
+	
+</aura:component>

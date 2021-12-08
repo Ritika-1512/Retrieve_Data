@@ -1,0 +1,22 @@
+<aura:component >
+   
+    <aura:attribute name="principle" type="decimal" />
+    <aura:attribute name="rate" type="decimal"  />
+    <aura:attribute name="time" type="decimal"  />
+    <aura:attribute name="amount" type="decimal" />
+    <aura:attribute name="interest" type="decimal" />
+    
+    
+    <lightning:input name="principle" value="{!v.principle}" label="Enter Amount" type="decimal"/>
+    <lightning:input name="rate" value="{!v.rate}" label="Enter Rate" type="decimal"/>
+    <lightning:input name="time" value="{!v.time}" label="Enter Time" type="decimal"/>
+    <lightning:button name="amount" value="{!v.amount}" label="Amount" onclick="{!c.myAction}" /><br/><br/>
+    Amount   :{!v.amount}<br/><br/>
+    Interest :{!v.interest}
+     <lightning:card variant="narrow" title="Narrow car Header" iconName="standard:Account" footer="Ritika Solanki">
+         <aura:set attribute="actions">
+             <p>This is my first card</p>
+         </aura:set>
+     </lightning:card>
+	
+</aura:component>

@@ -1,0 +1,9 @@
+<apex:page standardController="contact">
+    <apex:form >
+       <apex:pageBlock >
+           <apex:pageBlockButtons location="bottom">
+               <apex:commandButton action="{!save}" value="save"/>
+           </apex:pageBlockButtons>
+       </apex:pageBlock>
+    </apex:form>
+</apex:page>

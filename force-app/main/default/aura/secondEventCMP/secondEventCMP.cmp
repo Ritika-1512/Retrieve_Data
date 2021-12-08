@@ -1,0 +1,5 @@
+<aura:component >
+    <aura:attribute name="student" type="string" />
+    <aura:attribute name="subject" type="string" />
+    <aura:attribute name="city" type="string" />
+</aura:component>

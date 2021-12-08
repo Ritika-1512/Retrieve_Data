@@ -1,0 +1,17 @@
+<aura:component >
+    <h1>Registation Form</h1><br/>
+    <!--<aura:handler name="init" action="doInit" value="{!this}" />-->
+    <aura:attribute name="fName" type="string" />
+    <aura:attribute name="lName" type="string" />
+    <aura:attribute name="age" type="integer" />
+    <aura:attribute name="phone" type="integer" />
+    
+    
+    <lightning:input label="First Name :" type="text" value="{!v.fname}"/><br/>
+    <lightning:input label="Last Name :" type="text" value="{!v.lname}" /><br/>
+    <lightning:input label="Age		  :" type="integer" value="{!v.age}" /><br/>
+    <lightning:input label="Phone 	  :" type="integer" value="{!v.phone}" /><br/>
+    <lightning:button label="Save" onclick="doInit" />
+    
+	
+</aura:component>

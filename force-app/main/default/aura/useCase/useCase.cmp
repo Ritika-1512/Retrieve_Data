@@ -1,0 +1,88 @@
+<aura:component >
+    
+    <h1>Association Registration Form</h1><br/>
+    <h3>Affiliate Status</h3><br/>
+    <aura:attribute name="options" type="List" default="[
+            {'label': 'Univesity', 'value':'Univesity'},
+            {'label': 'Company', 'value': 'Company'}]"/>
+    <aura:attribute name="value" type="String" default="option1"/>
+ <lightning:radioGroup name="radioGroup"
+                          label="Registration Type"
+                          options="{!v.options }"
+                          value="{!v.value }"
+                        
+                       /> <br/>   
+  
+    <lightning:input name="noi" type="string" label="Organization/Institution Name" />
+
+    
+   <!-- <aura:attribute name="options" type="List" default="[
+    {'label': 'apples', 'value': 'option1'},
+    {'label': 'oranges', 'value': 'option2'}
+    ]"/>
+    <aura:attribute name="value" type="String" default="option1"/>
+    <lightning:radioGroup
+        aura:id="mygroup"
+        label="Radio Button Group"
+        options="{! v.options }"
+        value="{! v.value }"
+        onchange="{! c.handleChange }"
+        required="true" />-->
+  
+    <aura:attribute name="option2" type="list" default="[
+            {'label': 'Yes', 'value':'option1'},
+            {'label': 'No', 'value': 'option2'}]"/>
+    <aura:attribute name="value2" type="string" />
+    <div class="slds-m-around_x-small">
+ <lightning:radioGroup name="radioGroup2"
+                          label="Is Your Company Known By Other Name"
+                          options="{!v.option2}"
+                          value="{!v.value2}"
+                       type="radio"/> <br/>
+    </div>
+    <lightning:inputAddress aura:id="myAddress"
+                            addressLabel="Address"
+                            streetLabel="Street"
+                            cityLabel="City"
+                            countryLabel="Country"
+                            />
+    
+    <lightning:input name="website" type="string" label="Website" />
+    <p>Primary Contact Name</p>
+    <div class="slds-m-left_x-small">
+    <lightning:input name="fName" type="String" placeholder="First Name" />
+    <lightning:input name="lName" type="string" placeholder="Last Name" />
+    <lightning:input name="phone" type="number" placeholder="Phone" />
+    <lightning:input name="email" type="email" placeholder="Email" />
+    <lightning:input name="fax" type="string" placeholder="Fax Number" /><br/>
+    </div>
+    
+    <h2>Affiliate Information</h2>
+    <aura:attribute name="option3" type="list" default="[
+            {'label': 'Yes', 'value':'option1'},
+            {'label': 'No', 'value': 'option2'}]"/>
+    <aura:attribute name="value3" type="string"/>
+ <lightning:radioGroup name="radioGroup3"
+                          label="Do you hold one or more licences?"
+                          options="{!v.option3}"
+                          value="{!v.value3}"
+                       type="radio"/> <br/>
+    
+    <aura:attribute name="option4" type="list" default="[
+            {'label': 'Yes', 'value':'option1'},
+            {'label': 'No', 'value': 'option2'}]"/>
+    <aura:attribute name="value4" type="string" />
+ <lightning:radioGroup name="radioGroup4"
+                          label="Do you hold licenses with any independent schools?"
+                          options="{!v.option4}"
+                          value="{!v.value4}"
+                       type="radio"/> <br/>
+   
+    <lightning:input label="Consolidated Revenue($)"  name="usd" type="currency" />
+    <lightning:input name="nof" label="Number Of Factories" type="number" />
+    <lightning:input name="cType" label="Company Type" type="string" /> 
+    
+    <lightning:button name="send" label="Send" title="Send" onclick="{!c.myAction}" />
+    
+	
+</aura:component>

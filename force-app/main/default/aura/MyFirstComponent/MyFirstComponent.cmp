@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+  <div style="max-width: 400px;" >
+      <lightning:inputaddress
+           addresslabel="address"
+           streetlabel="street"
+           citylabel="city"
+           countrylabel="country"
+           provincelabel="province"
+           street="121 spear"
+           city="san francisco"
+             />
+      
+  </div>
+</aura:component>

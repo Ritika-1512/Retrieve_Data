@@ -1,0 +1,18 @@
+<apex:page >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:facet name="header">
+                <apex:commandButton value="submit"/>
+            </apex:facet>
+            This is Block 1
+            <apex:facet name="footer">
+                <h1>CopyRights@salesforce</h1>
+            </apex:facet>
+            <apex:facet name="caption">
+                <h1>
+                    This is an example
+                </h1>
+            </apex:facet>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

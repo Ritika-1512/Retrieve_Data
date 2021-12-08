@@ -1,0 +1,17 @@
+<aura:component >
+    
+    <aura:registerEvent name="auraEvent" type="c:oneEvent" />
+    <aura:attribute name="fName" type="String" />
+	<aura:attribute name="lName" type="String" />
+    <aura:attribute name="age" type="integer" />
+    <aura:attribute name="city" type="string" />
+    <aura:attribute name="state" type="string" />
+   
+    <lightning:input name="firstName" label="First Name" value="{!v.fName}"/><br/>
+    <lightning:input name="lastName" label="Last Name" value="{!v.lName}" /><br/>
+    <lightning:input name="age" label="Age" value="{!v.age}" /><br/>
+    <lightning:input name="city" label="City" value="{!v.city}" /><br/>
+    <lightning:input name="state" label="State" value="{!v.state}" />
+    <lightning:button name="submit" label="SAVE" onclick="{!c.myAction}" /><br/>
+    
+</aura:component>

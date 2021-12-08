@@ -1,0 +1,22 @@
+<apex:page standardController="Account">
+    <apex:form >
+      <apex:pageBlock >
+          <apex:dataTable value="{!account}" var="a">
+              <apex:facet name="header">
+                  <apex:commandButton value="submit"/>
+              </apex:facet>
+              This is block 1
+              <apex:facet name="footer">
+                  <h1>
+                      copyRights@salesforce
+                  </h1>
+              </apex:facet>
+              <apex:facet name="caption">
+                  <h1>
+                      this is an {!account.name}
+                  </h1>
+              </apex:facet>
+          </apex:dataTable>
+      </apex:pageBlock>
+    </apex:form>
+</apex:page>

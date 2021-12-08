@@ -1,0 +1,19 @@
+<aura:component >
+    <aura:attribute name ="num1" type ="integer"/>
+    <aura:attribute name ="num2" type ="integer"/>
+    <aura:attribute name ="result" type ="integer"/>
+    
+    <div class="box" backgroung-color="black">
+        <lightning:input label ="First Value" value ='{!v.num1}'/><br/>
+        <lightning:input label ='Second Value' value ='{!v.num2}' required="true" /><br/>
+        Result is- {!v.result}<br/>
+        <br/>
+        <lightning:buttongroup>
+            <lightning:button label ="Add" onclick ="{!c.addfunction}" />
+            <lightning:button label ="Sub" onclick ="{!c.subfunction}" />
+            <lightning:button label ="Mul" onclick ="{!c.mulfunction}" />
+            <lightning:button label ="Div" onclick ="{!c.divfunction}" />
+        </lightning:buttongroup>
+    </div>
+  
+</aura:component>

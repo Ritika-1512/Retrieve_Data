@@ -1,0 +1,6 @@
+<apex:page controller="Calculatorclass" action="{!oneyear}" >
+    <apex:form id="fm">
+        <apex:commandButton value="Two" action="{!twoyear}" reRender="fm"/>
+        {!intrest}
+    </apex:form>
+</apex:page>

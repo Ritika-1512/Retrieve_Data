@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:registerEvent name="auraEvt" type="c:firstEvent" />
+    <h1>This is my first Event Component</h1>
+    <p>
+        <lightning:button label="press here" onclick="{!c.callingEvent}" />
+    </p>
+	
+</aura:component>
