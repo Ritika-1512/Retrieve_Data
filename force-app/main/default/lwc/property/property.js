@@ -36,7 +36,7 @@ export default class Property extends LightningElement {
         Dependent: this.dependent,
         Notes: this.notes
     }
-    handleDateChange(event) {
+    handleNameChange(event) {
         this.record.Name = event.target.value;
     }
 
